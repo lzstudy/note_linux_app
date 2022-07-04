@@ -10,5 +10,7 @@
    :maxdepth: 3
    :titlesonly:
 
+   templete/index.md
+   base/index
    misc/index
 
