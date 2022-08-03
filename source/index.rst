@@ -12,5 +12,6 @@
 
    templete/index.md
    base/index
+   usb_device/index
    misc/index
 
