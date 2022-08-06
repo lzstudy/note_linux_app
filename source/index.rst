@@ -7,11 +7,30 @@
 ==========================================
 
 .. toctree::
-   :maxdepth: 3
-   :titlesonly:
+   :caption: 基础编程
+   :maxdepth: 1
+   :glob:
+
+   base/index
+
+.. toctree::
+   :caption: 设备编程
+   :maxdepth: 1
+   :glob:
+
+   usb_device/index
+
+.. toctree::
+   :caption: 音视频编程
+   :maxdepth: 1
+   :glob:
+
+   audio/index
+
+.. toctree::
+   :caption: 一米阳光
+   :maxdepth: 1
+   :glob:
 
    templete/index.md
-   base/index
-   usb_device/index
    misc/index
-
