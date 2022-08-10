@@ -16,7 +16,7 @@ alsa工具
    - c 右声道音量减
 
 
-alse控制[alsactl]
+alsa控制[alsactl]
 -----------------
 
 配置好声卡后，直接关机后配置会消失, 因此通过此工具保存
@@ -75,3 +75,10 @@ Lorem ipsum [Ref]_ dolor sit amet.
   /usr/sbin/nologin
   /bin/tcsh
   /bin/csh
+
+
+.. py:function:: enumerate(sequence[, start=0])
+
+   返回一个迭代器，输出包含索引及*sequence*里所有条目的元组.
+
+.. durole:: emphasis

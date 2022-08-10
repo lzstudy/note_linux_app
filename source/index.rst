@@ -11,7 +11,8 @@
    :maxdepth: 1
    :glob:
 
-   base/index
+   base/code/index
+   base/make/index
 
 .. toctree::
    :caption: 设备编程
