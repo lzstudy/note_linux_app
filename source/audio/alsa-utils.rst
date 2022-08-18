@@ -81,4 +81,3 @@ Lorem ipsum [Ref]_ dolor sit amet.
 
    返回一个迭代器，输出包含索引及*sequence*里所有条目的元组.
 
-.. durole:: emphasis
