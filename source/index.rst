@@ -9,10 +9,11 @@
 .. toctree::
    :caption: 基础编程
    :maxdepth: 1
+   :titlesonly:
    :glob:
 
-   base/code/index
    base/make/index
+   base/code/index
 
 .. toctree::
    :caption: 设备编程

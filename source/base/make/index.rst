@@ -2,7 +2,8 @@
 ========================================
 
 .. toctree::
-   :maxdepth: 2
+   :caption: 编译相关
+   :titlesonly:
 
    ld
    make
