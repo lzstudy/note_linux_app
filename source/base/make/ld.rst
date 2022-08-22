@@ -37,3 +37,10 @@
 .. note::
 
    链接结尾使用gcc aaa.o而没有使用ld命令, 原因在于ld需要自己手动寻找所有文件, 过程非常繁琐
+
+4 在CMake中使用链接脚本
+-----------------------
+
+.. code:: c
+
+   set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -T ${CMAKE_SOURCE_DIR}/my.lds")
