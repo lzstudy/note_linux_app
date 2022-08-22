@@ -5,6 +5,9 @@
 1 链接脚本模板
 --------------
 
+sample_lds.tar.gz_
+
+.. _sample_lds.tar.gz: http://120.48.82.24:9100/note_linux_app/sample_lds.tar.gz
 
 
 2 生成链接脚本
@@ -44,3 +47,32 @@
 .. code:: c
 
    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -T ${CMAKE_SOURCE_DIR}/my.lds")
+
+5 实现段自动初始化
+------------------
+
+5.1 添加usr_init段
+******************
+
+打开链接脚本, 添加如下内容
+
+.. code:: c
+
+  .usr_init       :
+  {
+      __usr_init_start = .;
+      __usr_init0_start = .;
+      *(.usr_init_0)
+      __usr_init1_start = .;
+      *(.usr_init_1)
+      *(.usr_init_1s)
+      __usr_init2_start = .;
+      *(.usr_init_2)
+      *(.usr_init_2s)
+      __usr_init3_start = .;
+      *(.usr_init_3)
+      *(.usr_init_3s)
+      __usr_init_end = .;
+  }
+
+
