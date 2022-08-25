@@ -14,6 +14,7 @@
 
    base/make/index
    base/code/index
+   base/check/index
 
 .. toctree::
    :caption: 设备编程
