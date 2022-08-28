@@ -70,6 +70,9 @@ c代码目录下包含一个 ``cfg`` 文件夹和 ``tscancode`` 文件.
    $1 = PATH
    ./tscancode --xml --enable=all -q -j16 $PATH > scan_result.xml 2>&1
 
+   # 放在/usr/bin目录下
+   可以再任意路径下执行
+
    # 生成扫描文件scan_result.xml, 建议使用excel看
  
 参数说明:
