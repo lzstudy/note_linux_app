@@ -68,6 +68,9 @@ backtrace
 
 .. code:: c
 
+   #include <stdio.h>
+   #include <stdint.h>
+   #include <unistd.h>
    #include <signal.h>
    #include <execinfo.h>
 
@@ -95,10 +98,18 @@ backtrace
        raise(signo);
    }
 
-   /* 注册异常信号 */
-   signal(SIGSEGV, exception_handler);
-   signal(SIGABRT, exception_handler);
-   signal(SIGFPE, exception_handler);
-   signal(SIGSEGV, exception_handler);
+   int main(void)
+   {
+       /* 注册异常信号 */
+       signal(SIGSEGV, exception_handler);
+       signal(SIGABRT, exception_handler);
+       signal(SIGFPE, exception_handler);
+       signal(SIGSEGV, exception_handler);
+
+	   while(1)
+	   {
+	      sleep(1);
+	   }
+   }
 
 
