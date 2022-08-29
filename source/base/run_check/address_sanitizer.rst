@@ -28,6 +28,11 @@ address_sanitizer
 
 替换malloc / free /memcpy /memset灯实现
 
+1.3 使用例子
+************
+
+.. image:: .images/sample_asan.jpg
+
 
 2 开启方法
 ==========
