@@ -9,12 +9,29 @@ backtrace
 2 编译部分
 ----------
 
-2.1 编译程序
-************
+2.1 编译简单程序
+****************
 
 .. code:: c
 
-   arm-linux-gnueabi-gcc -g -funwind-tables -rdynamic ***.c -o main
+   arm-linux-gnueabi-gcc -funwind-tables ***.c -o main
+
+2.2 编译带有动态库调用的程序(想要调试动态库)
+********************************************
+
+.. code:: c
+
+  arm-linux-gnueabi-gcc -funwind-tables -rdynamic ***.c -o main
+
+
+.. note::
+
+   * -funwind-tables 会生成栈回溯相关的信息
+   * -rdynamic 会把所有的符号编程动态符号, 此时就可以调试动态库了
+
+.. tip::
+
+   编译后的程序可以使用strip来减小程序, 不过此时只能打印寄存器地址, 无法打印调用符号
 
 3 使用方法
 ----------
@@ -24,7 +41,7 @@ backtrace
 
 .. code:: c
 
-   arm-linux-gnueabi-addr2line -C -f -e airdocApp <reg1> <reg2> <reg3> ....
+   arm-linux-gnueabi-addr2line -C -f -e main <reg1> <reg2> <reg3> ....
 
 * -C 显示全路径
 * -f 显示行号
