@@ -30,6 +30,7 @@
    :glob:
 
    audio/index
+   video/index
 
 .. toctree::
    :caption: 一米阳光
