@@ -18,9 +18,17 @@
    base/run_check/index
 
 .. toctree::
-   :caption: 设备编程
+   :caption: 标准编程
    :maxdepth: 1
-   :glob:
+   :titlesonly:
+
+   std/system/index
+   std/tools/index
+
+.. toctree::
+   :caption: 标准编程
+   :maxdepth: 1
+   :titlesonly:
 
    usb_device/index
 
