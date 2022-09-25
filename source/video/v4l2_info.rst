@@ -4,6 +4,14 @@ V4L2应用编程介绍
 1 介绍
 ------
 
+vl42使用/dev/video与/dev/subdev/与/dev/media设备节点编程, 对于简单的sensor，此时只需要/dev/videox节点即可，对于复杂的sensor需要结合subdev来形成pipeline, /dev/media来控制pipeline. 
+
+=================== =====================
+v4l2_mplane.tar.gz_ v4l2 - mplane模板文件
+=================== =====================
+
+.. _v4l2_mplane.tar.gz: http://120.48.82.24:9100/note_linux_app/v4l2_mplane.tar.gz
+
 
 2 参考逻辑
 ----------

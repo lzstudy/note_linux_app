@@ -10,7 +10,7 @@ inotify 可以实现对文件和文件夹的监听
 2 参考代码
 ----------
 
-.. code:: c
+.. code:: shell
 
    #include <poll.h>
    #include <sys/inotify.h>
