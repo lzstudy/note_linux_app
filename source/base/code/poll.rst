@@ -4,6 +4,35 @@ IO多路复用
 1 select
 --------
 
+1.1 说明
+********
+
+1.2 参考代码
+************
+
+.. code:: c
+
+   #include<sys/select.h>
+
+   int main(void)
+   {
+       int ret;
+       fd_set fds;
+
+       while(1)
+       {
+           FD_ZERO(&fds);
+           FD_SET(xxx_fd, &fds);
+
+           ret = select(xxx->fd + 1, &fds, NULL, NULL, -1);
+           if(ret == -1)
+               continue
+           if(ret == 0)
+               exit(1)
+
+       }
+   }
+
 2 poll
 ------
 
@@ -46,6 +75,11 @@ IO多路复用
 3 epoll
 -------
 
+3.1 说明
+********
+
+
+
 3.2 参考代码
 ************
 
@@ -55,7 +89,7 @@ IO多路复用
 
    int main(void)
    {
-      int epfd;
+      int epfd, devfd[3];
       struct epoll_event event_param;
 
       /* 创建epoll描述符 */
@@ -63,7 +97,15 @@ IO多路复用
 
       /* 添加要监视的描述符 */
       event_param.events = EPOLLIN | EPOLLET;
-      epoll_ctl(fd, EPOLL_CTL_ADD, NULL, &event_param;
+
+      event_param.data.fd = devfd[0];
+      epoll_ctl(fd, EPOLL_CTL_ADD, devfd[0], &event_param);
+
+      event_param.data.fd = devfd[1];
+      epoll_ctl(fd, EPOLL_CTL_ADD, devfd[1], &event_param);
+
+      event_param.data.fd = devfd[2];
+      epoll_ctl(fd, EPOLL_CTL_ADD, devfd[2], &event_param);
 
       for(;;)
       {
