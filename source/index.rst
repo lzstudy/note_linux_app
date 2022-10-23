@@ -7,6 +7,16 @@
 ==========================================
 
 .. toctree::
+   :caption: SHELL编程
+   :maxdepth: 4
+   :glob:
+
+   shell/shell/index
+   shell/makefile/index
+   shell/cmake/index
+
+
+.. toctree::
    :caption: 基础编程
    :maxdepth: 1
    :titlesonly:
