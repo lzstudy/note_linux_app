@@ -7,7 +7,7 @@
    shell/index
    debug/index
    make/index
-   svc/index
+   base/index
    hal/index
-   media/index
+   audio/index
    index_root

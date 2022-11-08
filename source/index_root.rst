@@ -22,10 +22,10 @@
    :titlesonly:
    :glob:
 
-   base/make/index
-   base/code/index
-   base/static_check/index
-   base/run_check/index
+   base1/make/index
+   base1/code/index
+   base1/static_check/index
+   base1/run_check/index
 
 .. toctree::
    :caption: 标准编程
