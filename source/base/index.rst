@@ -4,5 +4,7 @@
 .. toctree::
    :maxdepth: 3
 
+   file
+   dir
    thread
    sync
