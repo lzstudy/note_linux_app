@@ -14,6 +14,14 @@
 
     # 方法1 通过proc属性查看
     $ cat /proc/asound/cards
+    0 [imxaudioxcvr   ]: imx-audio-xcvr - imx-audio-xcvr
+                         imx-audio-xcvr
+    1 [btscoaudio     ]: bt-sco-audio - bt-sco-audio
+                         bt-sco-audio
+    2 [wm8960audio    ]: wm8960-audio - wm8960-audio
+                         wm8960-audio
+    3 [audiohdmi      ]: audio-hdmi - audio-hdmi
+                         audio-hdmi
 
     # 方法2 通过proc目录查看
     $ ls /proc/asound/
