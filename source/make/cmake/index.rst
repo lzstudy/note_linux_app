@@ -5,3 +5,4 @@ cmake
    :maxdepth: 3
 
    base
+   cmake

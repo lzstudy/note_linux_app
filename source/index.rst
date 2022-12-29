@@ -5,8 +5,8 @@
    :maxdepth: 3
 
    shell/index
-   debug/index
    make/index
+   debug/index
    base/index
    hal/index
    audio/index
