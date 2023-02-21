@@ -7,7 +7,10 @@
    shell/index
    make/index
    debug/index
+   codestd/index
    base/index
-   hal/index
+   thread/index
+   process/index
+   hw/index
    audio/index
    index_root

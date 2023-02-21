@@ -1,7 +1,7 @@
-HAL编程
+线程编程
 ========================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
-   base/index
+   base.rst
