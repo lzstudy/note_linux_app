@@ -11,6 +11,6 @@
    base/index
    thread/index
    process/index
-   hw/index
+   hal/index
    audio/index
    index_root
