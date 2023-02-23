@@ -7,6 +7,5 @@
    static/index
    gdb/index
    trace/index
-   perform/index
    diagnose/index
    misc/index

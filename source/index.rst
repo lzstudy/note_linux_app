@@ -11,6 +11,5 @@
    net/index
    hal/index
    audio/index
-   vidoe/index
+   video/index
    misc/index
-   index_root

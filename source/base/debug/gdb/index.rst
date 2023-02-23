@@ -6,5 +6,4 @@ GDB调试
 
    base
    port_gdb
-   gdb_arg
    gdb
