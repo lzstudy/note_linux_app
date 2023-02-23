@@ -1,9 +1,10 @@
-基础编程
+编程基础
 ========================================
 
 .. toctree::
    :maxdepth: 3
 
-   file
-   dir
-   sync
+   codestd/index
+   make/index
+   debug/index
+   shell/index

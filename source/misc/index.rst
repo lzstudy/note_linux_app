@@ -4,4 +4,4 @@
 .. toctree::
    :maxdepth: 1
 
-   misc.md
+   barcode_reader

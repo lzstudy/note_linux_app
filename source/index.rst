@@ -4,13 +4,13 @@
 .. toctree::
    :maxdepth: 3
 
-   shell/index
-   make/index
-   debug/index
-   codestd/index
    base/index
+   system/index
    thread/index
    process/index
+   net/index
    hal/index
    audio/index
+   vidoe/index
+   misc/index
    index_root
