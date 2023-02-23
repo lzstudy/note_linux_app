@@ -6,5 +6,4 @@
 
    file
    dir
-   thread
    sync
