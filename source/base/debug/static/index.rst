@@ -4,4 +4,4 @@
 .. toctree::
    :maxdepth: 3
 
-   base
+   tscancode

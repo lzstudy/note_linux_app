@@ -6,5 +6,5 @@
 
    file
    dir
-   sync
+   poll
    inotify

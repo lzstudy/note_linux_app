@@ -1,4 +1,4 @@
-address_sanitizer
+ASan
 =================
 
 1 ASan
@@ -31,7 +31,7 @@ address_sanitizer
 1.3 使用例子
 ************
 
-.. image:: .images/sample_asan.jpg
+.. image:: sample_asan.jpg
 
 
 2 开启方法

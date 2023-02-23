@@ -4,8 +4,8 @@
 .. toctree::
    :maxdepth: 3
 
+   dyn/index
    static/index
    gdb/index
    trace/index
-   diagnose/index
    misc/index
