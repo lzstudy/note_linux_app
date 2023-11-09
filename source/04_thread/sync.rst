@@ -10,8 +10,8 @@
 
 
 
-1 信号量
------------
+1 无名信号量
+-------------
 
 .. code-block:: c
 
@@ -44,7 +44,26 @@
 
     pthread_mutex_unlock(&lock);
 
-3 读写锁
+3 自旋锁
+-----------
+
+.. code-block:: c
+
+    #include <phtread.h>
+
+    static pthread_spinlock_t spin;
+
+    # 自旋锁初始化
+    pthread_spin_init(&spin, PTHREAD_PROCESS_PRIVATE);
+
+    # 保护临界区
+    pthread_spin_lock(&spin);
+    pthread_spin_unlock(&spin);
+
+    # 销毁
+    pthread_spin_destroy(&spin);
+
+4 读写锁
 -----------
 
 .. code-block:: c
@@ -73,7 +92,7 @@
     - 只要有一个线程获取写锁, 其他线程无论读写, 都要阻塞
 
 
-4 条件变量
+5 条件变量
 -----------
 
 条件变量与信号量的区别在于条件变量一次可以唤醒所有线程, 而信号量一次只能唤醒一个线程
@@ -103,25 +122,6 @@
 
     # 销毁
     pthread_cond_destroy(&cond);
-
-5 自旋锁
------------
-
-.. code-block:: c
-
-    #include <phtread.h>
-
-    static pthread_spinlock_t spin;
-
-    # 自旋锁初始化
-    pthread_spin_init(&spin, PTHREAD_PROCESS_PRIVATE);
-
-    # 保护临界区
-    pthread_spin_lock(&spin);
-    pthread_spin_unlock(&spin);
-
-    # 销毁
-    pthread_spin_destroy(&spin);
 
 6 屏障
 -----------

@@ -6,3 +6,4 @@
 
    base
    sync
+   com
