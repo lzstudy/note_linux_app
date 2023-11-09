@@ -1,7 +1,9 @@
-HAL编程
+程序编译
 ========================================
 
 .. toctree::
    :maxdepth: 5
 
-   01_i2c
+   01_shell/index
+   02_make
+   03_cmake

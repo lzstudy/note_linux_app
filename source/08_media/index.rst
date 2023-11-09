@@ -1,7 +1,8 @@
-HAL编程
+媒体编程
 ========================================
 
 .. toctree::
    :maxdepth: 5
 
-   01_i2c
+   01_audio/index
+   02_video/index
